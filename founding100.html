@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Founding 100 — Cheek Club | Las Vegas</title>
+<meta name="description" content="Be one of the first 100 members of Cheek Club, a boutique booty gym opening in Las Vegas. Founding rates locked for as long as you stay.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&family=Sacramento&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="lp-top">
+  <div class="wrap lp-in">
+    <p class="lp-mark"><a href="index.html" style="text-decoration:none">Cheek Club <span class="spark">&#10022;</span> Las Vegas</a></p>
+    <div class="lp-grid">
+      <div>
+        <span class="lp-badge">Founding 100 &middot; Now taking names</span>
+        <h1 class="lp-h1">Be one of the first <em>100</em>.</h1>
+        <p class="lp-sub">Cheek Club is a boutique booty gym opening in Las Vegas &mdash; twelve stations, one coach, 55 minutes, no guesswork. The first 100 members lock their rate for as long as they stay, and get the door before anyone else.</p>
+
+        <ul class="lp-perks">
+          <li><span class="mk">&#10022;</span><div><b>Your rate, locked</b>Whatever the Founding rate is when you join, that's what you pay &mdash; for as long as you stay a member, even after standard pricing goes up.</div></li>
+          <li><span class="mk">&#10022;</span><div><b>First pick of class times</b>Founders book before general booking opens. In a room of twelve, that's the whole game.</div></li>
+          <li><span class="mk">&#10022;</span><div><b>Founders Only nights</b>A members-only night just for the first hundred. It stays that way &mdash; the list never reopens.</div></li>
+          <li><span class="mk">&#10022;</span><div><b>Your name on the wall</b>The Founding wall is permanent. You were here before there was a here.</div></li>
+          <li><span class="mk">&#10022;</span><div><b>The address first</b>Location, opening date and pop-up classes get announced to this list before they go public.</div></li>
+        </ul>
+
+        <dl class="lp-stats">
+          <div><dt>Class length</dt><dd>55 min</dd></div>
+          <div><dt>Spots per class</dt><dd>12</dd></div>
+          <div><dt>Spots remaining</dt><dd id="spots-remaining">&mdash;</dd></div>
+          <div><dt>Cost to join list</dt><dd>$0</dd></div>
+        </dl>
+      </div>
+
+      <div class="lp-card">
+        <h2>Save your spot</h2>
+        <p class="sub">No payment, no commitment. Just your name on the list before the doors open.</p>
+
+        <form id="founding-form" novalidate>
+          <div class="field">
+            <label for="f-name">Name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" placeholder="First and last" required>
+          </div>
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@email.com" required>
+          </div>
+          <div class="field">
+            <label for="f-phone">Phone</label>
+            <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="(702) 000-0000">
+          </div>
+          <div class="field">
+            <label for="f-when">When would you train?</label>
+            <select id="f-when" name="when">
+              <option>Early mornings (5&ndash;7 AM)</option>
+              <option>Mid-morning (9&ndash;11 AM)</option>
+              <option>Lunchtime</option>
+              <option>Evenings (4:30&ndash;7:30 PM)</option>
+              <option>Weekends</option>
+              <option>Still figuring that out</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-exp">Where are you starting from?</label>
+            <select id="f-exp" name="experience">
+              <option>Brand new to lifting</option>
+              <option>I train, but not with a barbell</option>
+              <option>I lift regularly</option>
+              <option>Postpartum &mdash; interested in Core Values</option>
+            </select>
+          </div>
+          <button class="btn" type="submit" id="f-submit">Claim my founding spot</button>
+          <p class="note" id="f-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <div id="f-thanks" hidden>
+          <h2>You're on the list.</h2>
+          <p class="sub">Check your email &mdash; we sent a confirmation. You'll hear the address, the opening date and the pop-up classes before anyone else.</p>
+          <p class="note">Questions in the meantime: <a href="mailto:hello@cheekclub.com">hello@cheekclub.com</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="promise">
+  <div class="wrap">
+    <p class="script">No Guesswork.</p>
+    <p class="big">Just Growth.</p>
+    <p class="small">Every class &middot; Every coach &middot; Every time</p>
+  </div>
+</div>
+<section>
+  <div class="wrap">
+    <div class="sec-head narrow">
+      <p class="sec-eyebrow">What you're joining</p>
+      <h2>You walk in. Your station is waiting.</h2>
+      <p class="lede">The coach tells you where you're lifting today. You grab your band and pad from the Cheek Bar, walk to your bench, and the music starts. Everyone begins together. Nobody wanders the floor looking for a free rack.</p>
+    </div>
+    <div class="diff">
+      <div><p class="diff-k">Instead of</p><p><strong>Figuring it out yourself</strong>The programming is done. You show up and lift what's on for the day.</p></div>
+      <div><p class="diff-k">Instead of</p><p><strong>Waiting for equipment</strong>Your bench, dumbbells and barbell are yours for the full 55 minutes.</p></div>
+      <div><p class="diff-k">Instead of</p><p><strong>Hoping your form is right</strong>The coach demos every block and corrects at your station &mdash; not from a stage.</p></div>
+      <div><p class="diff-k">Instead of</p><p><strong>A different workout every time</strong>Same six blocks, every class. The lifts rotate; the structure never does.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="sec-head narrow">
+      <p class="sec-eyebrow">The Cheek Method<span class="tm">&trade;</span></p>
+      <h2>Six blocks. Every class. Every time.</h2>
+      <p class="lede">By your second visit you already know the shape of the room. That's what lets you stop thinking about what's next and start thinking about the weight.</p>
+    </div>
+    <div class="runway">
+      <div class="block"><p class="block-n">01</p><p class="block-name">Activate</p><p class="block-time">3&ndash;5 min</p><p>Banded walks and glute bridges. The same two moves every class.</p></div>
+      <div class="block"><p class="block-n">02</p><p class="block-name">Build</p><p class="block-time">12&ndash;18 min</p><p>One heavy compound: hip thrust, squat or RDL. The room lifts together.</p></div>
+      <div class="block"><p class="block-n">03</p><p class="block-name">Strength</p><p class="block-time">8&ndash;10 min</p><p>A second compound &mdash; split squat, step-up or leg press.</p></div>
+      <div class="block"><p class="block-n">04</p><p class="block-name">Sculpt</p><p class="block-time">5&ndash;18 min</p><p>Banded isolation: kickbacks, abduction, back extensions.</p></div>
+      <div class="block"><p class="block-n">05</p><p class="block-name">Burn</p><p class="block-time">5&ndash;15 min</p><p>A banded burnout ladder. The reps change; the format doesn't.</p></div>
+      <div class="block"><p class="block-n">06</p><p class="block-name">Finish</p><p class="block-time">3&ndash;5 min</p><p>Stretch, then the closing ritual. Everyone leaves together.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head narrow">
+      <p class="sec-eyebrow" id="faq">Questions people actually ask</p>
+      <h2>Before you put your name down.</h2>
+    </div>
+    <div class="faqs">
+      <details open>
+        <summary>Am I committing to anything?</summary>
+        <div class="faq-body"><p>No. There's no payment and no obligation. You're on a list, you hear things first, and you decide when there's an actual studio to walk into.</p></div>
+      </details>
+      <details>
+        <summary>I've never lifted heavy. Is this for me?</summary>
+        <div class="faq-body">
+          <p>Especially. Every member starts with Cheek Start &mdash; a one-on-one with a coach, no workout pressure, where you learn your station and where to begin.</p>
+          <p>Every class has a beginner level, and nobody adds weight until their form is clean.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Is this a weight-loss thing?</summary>
+        <div class="faq-body"><p>No. Nobody here will talk about burning off what you ate. The number we care about is the one on the bar.</p></div>
+      </details>
+      <details>
+        <summary>I'm postpartum.</summary>
+        <div class="faq-body"><p>Core Values is built for exactly this &mdash; pelvic floor activation, deep core work, diastasis-safe movement, taught by coaches with a separate certification for it. Get clearance from your provider, then start there.</p></div>
+      </details>
+      <details>
+        <summary>What will it cost?</summary>
+        <div class="faq-body"><p>Memberships run from $109/month for four classes to $279/month for everything, with drop-ins at $35. Founders lock their rate for as long as they stay.</p></div>
+      </details>
+      <details>
+        <summary>When does it open?</summary>
+        <div class="faq-body"><p>We're securing the space now, and pop-up classes run before the studio doors open. This list hears both first.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<div class="ritual">
+  <div class="wrap">
+    <p class="q">What do we build?</p>
+    <p class="a">Strength. Confidence. <span>Cheeks.</span></p>
+  </div>
+</div>
+
+<div class="strip">
+  <div class="wrap strip-in">
+    <span>Lift Heavy.</span>
+    <span class="sep">&#10022;</span>
+    <span>Grow Cheeks.</span>
+    <span class="sep">&#10022;</span>
+    <span>Feel Unstoppable.</span>
+    <span class="sep">&#10022;</span>
+    <span class="mark">Cheek Club</span>
+  </div>
+</div>
+
+<div class="lp-foot">
+  <div class="wrap">
+    <span>&copy; 2026 Cheek Club &middot; Las Vegas, NV</span>
+    <span><a href="index.html">cheekclub.com</a> &middot; <a href="mailto:hello@cheekclub.com">hello@cheekclub.com</a> &middot; @cheekclub</span>
+  </div>
+</div>
+
+<script>
+/* ============================================================
+   CHEEK CLUB — FOUNDING 100
+   ------------------------------------------------------------
+   >>> TWO EDITS AND THIS PAGE IS LIVE. Both are right here. <<<
+   ============================================================ */
+
+/* ---- EDIT 1 of 2 — FORMSPREE (receives the signups) --------
+   formspree.io -> sign up free -> New Form -> copy the form ID
+   out of the endpoint it gives you. It looks like "xandpqrs".
+   Paste it between the quotes below.                          */
+var FORMSPREE_ID = "YOUR_FORMSPREE_FORM_ID";
+
+/* ---- EDIT 2 of 2 — COUNTERAPI (live spots remaining) -------
+   counterapi.dev -> sign up free -> create a workspace ->
+   copy the workspace name and an API key from the dashboard.
+
+   PREFER NOT TO USE A THIRD PARTY? Leave these two as they are.
+   The counter then runs off SPOTS_CLAIMED_MANUAL below, and you
+   just bump that number yourself as signups land in your inbox. */
+var COUNTER_WORKSPACE = "YOUR_COUNTER_WORKSPACE";
+var COUNTER_API_KEY   = "YOUR_COUNTER_API_KEY";
+
+/* Total founding spots, and the manual fallback count. The page
+   uses this whenever CounterAPI is not configured or is down, so
+   the number on screen is never blank or wrong-looking.        */
+var FOUNDING_TOTAL       = 100;
+var SPOTS_CLAIMED_MANUAL = 0;
+
+/* ====== nothing below here needs editing ==================== */
+(function () {
+  "use strict";
+
+  var COUNTER_NAME = "founding100";
+  var form    = document.getElementById("founding-form");
+  var card    = document.getElementById("f-status");
+  var submit  = document.getElementById("f-submit");
+  var thanks  = document.getElementById("f-thanks");
+  var spotsEl = document.getElementById("spots-remaining");
+
+  var counterReady = COUNTER_WORKSPACE.indexOf("YOUR_") !== 0 &&
+                     COUNTER_API_KEY.indexOf("YOUR_")   !== 0;
+  var formReady    = FORMSPREE_ID.indexOf("YOUR_")      !== 0;
+
+  function render(claimed) {
+    var left = Math.max(0, FOUNDING_TOTAL - claimed);
+    spotsEl.textContent = left;
+    if (left === 0) {
+      spotsEl.textContent = "Full";
+      if (submit) {
+        submit.disabled = true;
+        submit.textContent = "All 100 spots claimed";
+      }
+      say("The Founding 100 is full. Email hello@cheekclub.com to join the general waitlist.");
+    }
+  }
+
+  function say(msg, isError) {
+    if (!card) return;
+    card.textContent = msg;
+    card.style.color = isError ? "#B3261E" : "";
+  }
+
+  function counterUrl(action) {
+    return "https://api.counterapi.dev/v2/" + encodeURIComponent(COUNTER_WORKSPACE) +
+           "/" + COUNTER_NAME + (action ? "/" + action : "");
+  }
+
+  function counterFetch(action) {
+    return fetch(counterUrl(action), {
+      headers: { "Authorization": "Bearer " + COUNTER_API_KEY }
+    }).then(function (r) {
+      if (!r.ok) throw new Error("counter " + r.status);
+      return r.json();
+    }).then(function (j) {
+      // CounterAPI v2 returns the count under data.up_count (or data.value)
+      var d = (j && j.data) || j || {};
+      var n = d.up_count;
+      if (typeof n !== "number") n = d.value;
+      if (typeof n !== "number") n = d.count;
+      if (typeof n !== "number") throw new Error("counter shape");
+      return n;
+    });
+  }
+
+  /* ---- initial paint ------------------------------------- */
+  render(SPOTS_CLAIMED_MANUAL);
+  if (counterReady) {
+    counterFetch("").then(render).catch(function () {
+      /* stay on the manual number rather than showing a broken counter */
+      render(SPOTS_CLAIMED_MANUAL);
+    });
+  }
+
+  /* ---- submit -------------------------------------------- */
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    var name  = document.getElementById("f-name").value.trim();
+    var email = document.getElementById("f-email").value.trim();
+
+    if (!name)  { say("Please add your name.", true); return; }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      say("That email doesn't look right — mind checking it?", true); return;
+    }
+
+    if (!formReady) {
+      say("This form isn't connected yet: add your Formspree form ID in the page source.", true);
+      return;
+    }
+
+    submit.disabled = true;
+    submit.textContent = "Saving your spot…";
+    say("");
+
+    fetch("https://formspree.io/f/" + FORMSPREE_ID, {
+      method: "POST",
+      headers: { "Accept": "application/json", "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name:       name,
+        email:      email,
+        phone:      document.getElementById("f-phone").value.trim(),
+        when:       document.getElementById("f-when").value,
+        experience: document.getElementById("f-exp").value,
+        _subject:   "Founding 100 signup — " + name
+      })
+    }).then(function (r) {
+      if (!r.ok) throw new Error("formspree " + r.status);
+      form.hidden = true;
+      thanks.hidden = false;
+      if (counterReady) counterFetch("up").then(render).catch(function () {});
+    }).catch(function () {
+      submit.disabled = false;
+      submit.textContent = "Claim my founding spot";
+      say("That didn't send. Try again, or email hello@cheekclub.com and we'll add you by hand.", true);
+    });
+  });
+})();
+</script>
+</body>
+</html>
